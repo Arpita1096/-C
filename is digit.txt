@@ -1,0 +1,20 @@
+#include<stdio.h>
+void is_digit(char ch);
+void main()
+{
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    is_digit(ch);
+}
+void is_digit(char ch)
+{
+     if(ch>=0 && ch<=99999999)
+     {
+         printf("character is a digit");
+     }
+     else
+     {
+     printf("charater is not a digit");
+     }
+}

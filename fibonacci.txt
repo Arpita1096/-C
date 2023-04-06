@@ -1,0 +1,24 @@
+#include <stdio.h>
+void fibonacci(int N);
+void main()
+{
+    int n ;
+    printf("enter the number of terms:");
+    scanf("%d",&n);
+    fibonacci(n);
+    //return 0;
+}
+void fibonacci(int N)
+{
+    int i,c=0;
+    int a=0;
+    int b=1;
+    printf("Fibonacci series for %d terms:-\n",N);
+    for( int i=0;i<=N;i++)
+    {
+        printf("%d",c);
+        a=b;
+        b=c;
+        c=a+b;
+    }
+}

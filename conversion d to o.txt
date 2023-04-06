@@ -1,0 +1,39 @@
+#include<stdio.h>
+#include<math.h>
+
+void decimalToOctal(int num);
+void octalToDecimal(int num);
+void main()
+{
+     int number1;
+     printf("enter number1");
+     scanf("%d",&number1);
+     int number2;
+     printf("Enter number2");
+     scanf("%o",&number2);
+     decimalToOctal(number1);
+     octalToDecimal(number2);
+}
+void decimalToOctal(int num)
+{
+    int octal=0,i=1;
+    while(num>0)
+    {
+        octal=octal+(num%8)*i;
+        num=num/8;
+        i=i*10;
+    }
+   printf("octal number of a decimal number=%o\n",octal);
+}
+void octalToDecimal(int num)
+{
+    int decimal=0,i=0;
+    while(num>0)
+    {
+        decimal=decimal+(num%10)*pow(8,i);
+        ++i;
+        num=num/10;
+    }
+    i=1;
+    printf("decimal number of an octal number=%d\n",decimal);
+}

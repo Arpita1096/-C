@@ -1,0 +1,45 @@
+#include<stdio.h>
+void is_upper(char ch);
+void main()
+{
+    char ch;
+    printf("enter a character");
+    scanf("%c",&ch);
+    is_upper(ch);
+}
+void is_upper(char ch)
+{
+    if(ch>=65 && ch<=90)
+    {
+        printf("character is in upper case");
+    }
+    printf("not in upper case");
+}
+
+
+
+
+
+
+
+
+
+
+
+#include<stdio.h>
+void is_lower(char ch);
+void main()
+{
+    char ch;
+    printf("enter a character");
+    scanf("%c",&ch);
+    is_lower(ch);
+}
+void is_lower(char ch)
+{
+    if(ch>=97 && ch<=122)
+    {
+        printf("character is in lower case");
+    }
+    printf("not in lower case");
+}

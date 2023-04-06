@@ -1,0 +1,29 @@
+#include<stdio.h>
+void sum(int n);
+void main()
+{
+   int num;
+   printf("enter a number");
+   scanf("%d",&num);
+   sum(num);
+    
+}
+void sum(int n)
+{
+    int sum=0,m,p,q;
+    //while(n>0)
+    //{
+    //m=n%10;
+    //n=n/10;
+    //p=n%10;
+    //q=n/10;
+    while(n!=0)
+    {
+        sum=sum+(n%10);
+        n=n/10;
+    }
+    //sum=sum+m+p+q;
+   // n=n/10;
+    printf("Addition of digits of a number=%d",sum);
+    
+}

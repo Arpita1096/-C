@@ -1,0 +1,20 @@
+#include <stdio.h>
+void is_alphabet(char ch);
+void main()
+{
+    char ch;
+    printf("enter a character:");
+    scanf("%c",&ch);
+    is_alphabet(ch);
+}
+void is_alphabet(char ch)
+{
+    if((ch>='a' && ch<='z') || (ch>='A' && ch<='Z'))
+    {
+        printf("character is an alphabet");
+    }
+    else
+    {
+        printf("character is not an alphabet");
+    }
+}

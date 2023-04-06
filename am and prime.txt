@@ -1,0 +1,51 @@
+#include <stdio.h>
+int checkPrime(int N);
+int armstrong(int N);
+
+void main()
+{
+    int i,num;
+    printf("enter a number");
+    scanf("%d",&num);
+    int choice;
+    printf("enter 1 for prime or 2 for armstrong no.");
+    scanf("%d",&choice);
+    int m,sum=0,temp;
+    switch(choice)
+    {
+        case 1:
+         for(i=o;i<=num;i++)
+         {
+             if(num%i==0)
+             printf("number is a prime number");
+         }
+         printf("number is not a prime number");
+         break;
+         case 2:
+          temp=num;
+          while(num>0)
+          {
+              m=num%10;
+              sum+=m*m*m;
+              num=num/10;
+          }
+          if(temp==sum)
+          printf("Armstrong no.");
+          else
+          printf ("not an armstrong no.");
+          break;
+          default:
+          printf("wrong choice");
+          break;
+    }
+}
+int checkPrime(int N)
+{
+    int prime;
+    return prime;
+}
+int armstrong(int N)
+{
+    int armstrong;
+    return armstrong;
+}

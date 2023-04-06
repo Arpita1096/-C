@@ -1,0 +1,63 @@
+#include <stdio.h>
+void add(int,int);
+void sub(int,int);
+void mult(int,int);
+void div(int,int);
+
+int main() 
+{
+char op;
+int num1 num2;
+printf("enter char and two number");
+scanf("%c,%d,%d",&op,&num1,&num2);
+switch(op)
+{
+    case '+':
+    {
+        add(num1,num2);
+        break;
+    }
+    case '-':
+    {
+        sub(num1,num2);
+        break;
+    }
+    case '*':
+    {
+        mult(num1,num2);
+        break;
+    }
+    case '/':
+    {
+        div(num1,num2);
+        break;
+        }
+}
+void add(int num1,int num2)
+{
+    int result;
+    result=num1+num2;
+    printf("%d",result);
+    }
+void sub(int num1,int num2)
+    {
+        int result;
+        result=num1-num2;
+        printf("%d", result);
+        }
+void mult(int num1,int num2)
+{
+    int result;
+    result=num1*num2;
+    printf("%d",  result);
+    }
+void div(int num1,int num2)
+    {
+        int result;
+        result=num1/num2;
+        printf("%d",result);
+    }
+
+   return 0;
+   getch();
+}

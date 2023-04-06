@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<ctype.h>
+void to_upper(char ch);
+void main()
+{
+    char ch;
+    printf("enter a character to be changed:");
+    scanf("%c",&ch);
+    to_upper(ch);
+    
+}
+void to_upper(char ch)
+{
+    //char ch;
+    if(toupper(ch))
+    {
+        ch=toupper(ch);
+    printf(" in upper case is %c",ch);
+    }
+    else
+    {
+        printf("\nenter valid alphabet");
+    }
+}

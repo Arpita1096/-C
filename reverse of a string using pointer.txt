@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include<string.h>
+int str_len(char*ptr);
+void revstr(char *str);
+int main()
+{
+   char str[50];
+   printf("Enter a string to be reversed:\n");
+   scanf("%s",str);
+   revstr(str);
+   printf("the reverse of a string is :%s",str);
+    return 0;
+}
+void revstr(char *str)
+{
+    int len,i;
+    char *start,*end,temp;
+    len=str_len(str);
+    start=str;
+    end=str;
+    for(i=0;i<len-1;i++)
+    end++;
+    for(i=0;i<len/2;i++)
+    {
+        temp=*end;
+        *end=*start;
+        *start=temp;
+        start++;
+        end--;
+    }
+}
+int str_len(char*ptr)
+{
+    int i=0;
+    while(*(ptr+i)!='\0')
+    i++;
+    return i;
+}
